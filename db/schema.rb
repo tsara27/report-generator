@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "room_records", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.bigint "room_id", null: false
-    t.bigint "room_class_id", null: false
+    t.bigint "room_id"
+    t.bigint "room_class_id"
     t.datetime "date", null: false
     t.integer "number_current_patients", null: false
     t.integer "number_arrived_patients", null: false
